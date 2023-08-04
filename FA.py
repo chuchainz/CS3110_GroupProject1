@@ -26,7 +26,7 @@ def main():
 	M1_start_state = "s0"
 	M1_accept_states = {"s1"}
 	M1_fa = FA(M1_states, M1_transitions, M1_start_state, M1_accept_states)
-	M1_strings = ["Ʌ", "100", "011", "10abc1", "0", "1", "0101011", "11010", "0001", "1110"]
+	M1_strings = ["Ʌ", "100", "011", "10abc1", "0", "1", "0101011", "11010", "0001", "1110", "0010", "1000"]
 
 
 	#An FA (M2) which recognizes the set of strings over {0,1} that do not have two consecutive 1's.
@@ -40,7 +40,7 @@ def main():
 	M2_start_state = "s0"
 	M2_accept_states = {"s0", "s1"}
 	M2_fa = FA(M2_states, M2_transitions, M2_start_state, M2_accept_states)
-	M2_strings = ["Ʌ", "1", "000", "101", "111", "01001", "1011011", "1011000", "01010", "1010101110"]
+	M2_strings = ["Ʌ", "1", "000", "101", "111", "01001", "1011011", "1011000", "01010", "1010101110", "011", "010"]
 
 
 	#An FA (M3) which recognizes all identifiers that begin with a letter (both upper and lower) and followed by
@@ -69,7 +69,7 @@ def main():
 	M3_start_state = 's0'
 	M3_accept_states = {'s1','s2'}
 	M3_fa = FA(M3_states, M3_transitions, M3_start_state, M3_accept_states)
-	M3_strings = ["Ʌ", "HelloWorld", "abc", "1st_Ex", "Java", "the_num", "code", "X3Y7", "X=90", "X*Y"]
+	M3_strings = ["Ʌ", "HelloWorld", "abc", "1st_Ex", "Java", "the_num", "code", "X3Y7", "X=90", "X*Y", "yes123", "bob"]
 
 	#An FA (M4) which recognizes the set of all decimal unsigned integer numbers without leading zeros except
 	#the number 0 (i.e. number 0 should be accepted while number 01 should be rejected.)
@@ -83,7 +83,7 @@ def main():
 	M4_start_state = "s0"
 	M4_accept_states = {"s1","s2"}
 	M4_fa = FA(M4_states, M4_transitions, M4_start_state, M4_accept_states)
-	M4_strings = ["-7", "007", "3.14", "103", "24930000", "0", "01", "100", "0101"]
+	M4_strings = ["7", "-7", "007", "3.14", "103", "24930000", "0", "01", "100", "0101", "-89", "191"]
 
 
 
